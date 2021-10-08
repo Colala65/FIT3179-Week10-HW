@@ -1,0 +1,177 @@
+Country,ISO-code,Meat consumption,GDP per capita
+Afghanistan,AFG,17.3,2182
+Algeria,DZA,18.3,16091
+Angola,AGO,19,6763
+Antigua and Barbuda,ATG,56,30593
+Argentina,ARG,79.7,19971
+Armenia,ARM,27.7,11845
+Australia,AUS,108.2,54799
+Austria,AUT,94.1,55171
+Azerbaijan,AZE,15.9,19156
+Bahrain,BHR,70.7,51991
+Bangladesh,BGD,3.1,5453
+Barbados,BRB,88.7,19364
+Belarus,BLR,58.6,21224
+Belgium,BEL,86.1,50904
+Belize,BLZ,74.7,8791
+Benin,BEN,16.2,3648
+Bhutan,BTN,3,10627
+Bolivia,BOL,50,8525
+Bosnia and Herzegovina,BIH,21.4,14894
+Botswana,BWA,27.3,19388
+Brazil,BRA,82.4,17106
+Bulgaria,BGR,69.4,26034
+Burkina Faso,BFA,11.2,2181
+Burundi,BDI,3.5,724
+Cambodia,KHM,13.9,5004
+Cameroon,CMR,14.4,4099
+Canada,CAN,108.1,52144
+Cape Verde,CPV,26.3,8716
+Central African Republic,CAF,28,864
+Chad,TCD,14.3,2603
+Chile,CHL,66.4,27150
+China,CHN,52.4,20984
+Colombia,COL,33.9,16265
+Comoros,COM,7.6,2898
+Costa Rica,CRI,40.4,18651
+Croatia,HRV,49.9,29207
+Cuba,CUB,32.2,8822
+Cyprus,CYP,131.3,42956
+Czech Republic,CZE,77.3,40585
+Democratic Republic of the Congo,COD,4.8,873
+Denmark,DNK,145.9,55675
+Djibouti,DJI,17.1,5855
+Dominica,DMA,67.1,12851
+Dominican Republic,DOM,37.8,20625
+East Timor,TLS,41.3,5321
+Ecuador,ECU,45,11866
+Egypt,EGY,22.5,14800
+El Salvador,SLV,21.4,8593
+Eritrea,ERI,7.7,1103
+Estonia,EST,67.4,37606
+Ethiopia,ETH,7.9,2702
+Fiji,FJI,39.1,12689
+Finland,FIN,67.4,49548
+France,FRA,101.1,48640
+Gabon,GAB,46,19839
+Georgia,GEO,26,13200
+Germany,DEU,82.1,55306
+Ghana,GHA,9.9,7343
+Greece,GRC,78.7,31616
+Greenland,GRL,63.4,48182
+Grenada,GRD,97,17434
+Guatemala,GTM,23.8,9009
+Guinea,GIN,6.5,2113
+Guinea,GIN,6.5,2574
+Guinea,GIN,13,2113
+Guinea,GIN,13,2574
+Guyana,GUY,31.8,17163
+Haiti,HTI,15.3,1916
+Honduras,HND,24.7,5600
+Hungary,HUN,100.7,35941
+Iceland,ISL,84.8,56974
+India,IND,5.2,9027
+Indonesia,IDN,8.3,14841
+Iran,IRN,23.1,17832
+Iraq,IRQ,18.2,18755
+Ireland,IRL,106.3,86988
+Israel,ISR,97.1,40337
+Italy,ITA,90.4,41582
+Ivory Coast,CIV,11.3,4754
+Jamaica,JAM,56.8,9932
+Japan,JPN,45.9,46827
+Jordan,JOR,29.8,9939
+Kazakhstan,KAZ,44.8,30178
+Kenya,KEN,14.3,4078
+Kiribati,KIR,32.1,2193
+Kuwait,KWT,60.2,67891
+Kyrgyzstan,KGZ,39,4193
+Laos,LAO,15,8684
+Latvia,LVA,45.7,32987
+Lebanon,LBN,63.1,15599
+Lesotho,LSO,15.4,3655
+Liberia,LBR,7.9,1428
+Libya,LBY,28.6,9446
+Lithuania,LTU,49.5,38751
+Luxembourg,LUX,141.7,112045
+Madagascar,MDG,17.6,1776
+Malawi,MWI,5.1,1292
+Malaysia,MYS,50.9,34567
+Maldives,MDV,16.6,24796
+Mali,MLI,19,2569
+Malta,MLT,86.9,49589
+Mauritania,MRT,29.9,5158
+Mauritius,MUS,39.6,26461
+Mexico,MEX,58.6,21363
+Moldova,MDA,22.7,8161
+Mongolia,MNG,108.8,15089
+Morocco,MAR,20.6,9667
+Mozambique,MOZ,5.6,1372
+Myanmar,MMR,10.7,7220
+Namibia,NAM,34,11451
+Nepal,NPL,10,3550
+Netherlands,NLD,89.3,60299
+New Zealand,NZL,142.1,42045
+Nicaragua,NIC,14.9,5297
+Niger,NER,11.2,1152
+Nigeria,NGA,8.6,6172
+North Macedonia,MKD,35.4,17378
+Norway,NOR,61.7,79638
+Oman,OMN,49.8,48593
+Pakistan,PAK,12.3,6016
+Panama,PAN,54.5,28456
+Papua New Guinea,PNG,73,4081
+Paraguay,PRY,70.3,13213
+Peru,PER,34.5,15399
+Philippines,PHL,31.1,10094
+Poland,POL,78.1,35651
+Portugal,PRT,91.1,34936
+Republic of the Congo,COG,13.3,7336
+Romania,ROU,54.5,29555
+Russia,RUS,51,30820
+Rwanda,RWA,4.4,2642
+Saint Kitts and Nevis,KNA,99.3,31950
+Saint Lucia,LCA,124.1,15159
+Saint Vincent and the Grenadines,VCT,79.1,12983
+Samoa,WSM,82.6,6493
+Saudi Arabia,SAU,44.6,56912
+Senegal,SEN,17.7,4079
+Seychelles,SYC,51.1,33118
+Sierra Leone,SLE,6.1,1765
+Singapore,SGP,71.1,105689
+Slovakia,SVK,67.4,38321
+Slovenia,SVN,88,40344
+Solomon Islands,SLB,9.7,2363
+Somalia,SOM,9.5,314.5
+South Africa,ZAF,39,13965
+South Korea,KOR,48,46452
+South Sudan,SSD,13.1,1715
+Spain,ESP,118.6,43007
+Sri Lanka,LKA,6.6,14509
+Sudan,SDN,21,3986
+Suriname,SUR,40.3,16044
+Sweden,SWE,76.1,55989
+Switzerland,CHE,72.9,67558
+Tajikistan,TJK,8.7,3751
+Tanzania,TZA,10,3652
+Thailand,THA,27.9,21361
+The Bahamas,BHS,123.6,33432
+The Gambia,GMB,5.2,2892
+Togo,TGO,8.5,1913
+Trinidad and Tobago,TTO,57.8,33713
+Tunisia,TUN,25.5,13093
+Turkey,TUR,19.3,29327
+Turkmenistan,TKM,41.7,21855
+Uganda,UGA,11.7,2753
+Ukraine,UKR,32.3,10130
+United Arab Emirates,ARE,74.4,70441
+United Kingdom,GBR,79.6,48169
+United States,USA,124.8,67426
+Uruguay,URY,98.6,24516
+Uzbekistan,UZB,20.7,9595
+Vanuatu,VUT,32.6,3039
+Venezuela,VEN,56.6,16055
+Vietnam,VNM,28.6,8677
+Yemen,YEM,14.7,2312
+Zambia,ZMB,11.9,4174
+Zimbabwe,ZWE,15.2,2778

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Meat Production around the world (1961–2018)",
+  "width": 850,
+  "height": 500,
+  "projection": {"type": "equirectangular"},
+  "params": [
+    {
+      "name": "Year_selection",
+      "value": 2018,
+      "bind": {"input": "range", "min": 1961, "max": 2018, "step": 1, "name": "Year: "}
+    }
+  ],
+
+  "layer":[
+    {
+      "data": {
+          "url": "https://raw.githubusercontent.com/Colala65/FIT3179-Week10-HW/main/Week-10-Homework-Code/js/ne_110m_admin_0_countries.topojson",
+          "format": { "type": "topojson", "feature": "ne_110m_admin_0_countries" }
+      },
+      "transform": [{
+          "calculate": "'Data is not available in ' + datum.properties.NAME + ' for this year'",
+          "as": "note"
+      }],
+      "mark": {
+          "type": "geoshape",
+          "fill": "lightgray",
+          "stroke": "white",
+          "strokeWidth": 0.8
+      },
+      "encoding": { "tooltip": { "field": "note" } }
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Colala65/FIT3179-Week10-HW/main/Week-10-Homework-Code/data/meat_production_cleaned.csv"   
+      },
+      "transform": [{
+          "lookup": "Code",
+          "from": {
+              "data": {
+              "url": "https://raw.githubusercontent.com/Colala65/FIT3179-Week10-HW/main/Week-10-Homework-Code/js/ne_110m_admin_0_countries.topojson",
+              "format": {"type": "topojson","feature": "ne_110m_admin_0_countries"}
+              },
+              "key": "properties.ISO_A3"
+            },
+            "as": "geo"
+          },
+          {"filter": "datum.Year == Year_selection"},
+          {"calculate": "datum.Production/datum.Population * 1000", "as": "Production per population"}
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 0.8
+        },
+      "encoding": {
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        },
+        "color": {"field": "Production per population", "type": "quantitative", "title": "Production (kg per person)"},
+        "tooltip": [
+          {"field": "Entity", "type": "nominal", "title": "Country"},
+          {"field": "Production per population", "type": "quantitative", "format": ",", "title": "Production per population"},
+          {"field": "Production", "type": "quantitative", "title": "Production", "format": ","},
+          {"field": "Population", "type": "quantitative", "title": "Population", "format": ","}
+        ]
+      }
+    }
+  ]
+}

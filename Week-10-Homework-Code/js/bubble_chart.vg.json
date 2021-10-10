@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Meat Consumption and GDP per capita (1990–2017)",
+  "width": 790,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Colala65/FIT3179-Week10-HW/main/Week-10-Homework-Code/data/meat_consumption_GDP_1990_2018.csv"   
+  },
+  "params": [
+    {
+      "name": "Year_selection",
+      "value": 2017,
+      "bind": {"input": "range", "min": 1990, "max": 2017, "step": 1, "name": "Year: "}
+    },
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Americas",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "labels":[
+          "Show All",
+          "Americas",
+          "Europe",
+          "Africa",
+          "Asia",
+          "Oceania"
+        ],
+        "name": "Continent Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.Year == Year_selection"},
+    {"filter": "datum['GDP per capita'] > 0"},
+    {"filter": "datum.Consumption > 0"},
+    {"filter": "Continent_selection == null || datum.continent == Continent_selection"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "GDP per capita",
+      "type": "quantitative",
+      "axis": {"tickCount": 5},
+      "scale": {"type": "log", "domain": [1, 1000000]}
+    },
+    "y": {
+      "field": "Consumption",
+      "type": "quantitative",
+      "title": "Consumption (kg per person)",
+      "axis": {"tickCount": 4},
+      "scale": {"type": "log", "domain": [1, 100000]}
+    }
+  },
+
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+
+        "color": {
+            "field": "continent",
+            "type": "nominal",
+            "title": "Continent",
+            "scale": {
+              "domain": [
+                "Americas",
+                "Europe",
+                "Africa",
+                "Asia",
+                "Oceania"
+              ],
+              "range": [
+                "#e41a1c",
+                "#984ea3",
+                "#ff7f00",
+                "#a6cee3",
+                "#a65628"
+              ]
+            }
+          },
+         
+        "opacity": {
+          "value": 0.6
+        },
+
+        "tooltip": [
+          {"field": "Year", "type": "quantitative"},
+          {"field": "Entity", "type": "nominal", "title": "Country"},
+          {"field": "GDP per capita", "type": "quantitative", "format": ",.2f"},
+          {"field": "Consumption", "type": "quantitative", "format": ",.2f", "title": "Consumption (kg per person)"}
+          ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -10,
+        "fontSize": 10
+      },
+      "encoding": {
+        "text": {"field": "Entity", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition":{
+            "test": "datum.Entity == 'Australia' || datum.Entity == 'New Zealand' || datum.Entity == 'China' || datum.Entity == 'Ireland' || datum.Entity == 'Denmark'",
+            "value": 1 
+          },
+          "value": 0 
+        }
+      }
+      
+    }
+  ]
+}
